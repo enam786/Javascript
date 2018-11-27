@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+function zoom(){
+    var testcanvas = document.getElementById("canvas");
+    testcanvas.width *=1.25;
+    testcanvas.height *= 1.25;
+}
+function zoom1(){
+    var testcanvas = document.getElementById("canvas");
+    testcanvas.width /=1.25;
+    testcanvas.height /= 1.25;
+}
+</script>
+  <input type="button" value="zoomOut" onClick="zoom()" />
+  <input type="button" value="zoomIn" onClick="zoom1()" />
+  <div class="main">
+    <canvas id="canvas" style="background: #002699;"></canvas>
+  </div>
+</body>
+</html>
